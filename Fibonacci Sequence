@@ -1,0 +1,16 @@
+def generate_fibonacci(n):
+    a = 0
+    b = 1
+    count = 0
+    print("Fibonacci sequence:")
+    while count < n:
+        print(a)
+        next_number = a + b
+        a = b
+        b = next_number
+        count += 1
+num_terms = int(input("Enter the number of terms: "))
+if num_terms <= 0:
+    print("Please enter a positive number.")
+else:
+    generate_fibonacci(num_terms)
